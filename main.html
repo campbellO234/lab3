@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Menu with CSS </title>
+		
+		<link rel="stylesheet" href="css/mystyles.css" />
+		<script type="text/javascript" src="js/myjs.js"></script>
+		<?php include ("dbconnection.php"); ?>
+		
+
+	</head>
+
+
+	<body bgcolor="#fff">
+		<br>
+	
+	<h1 align="center"> JBU Online Store </h1>
+	
+	
+	<ul>
+		<li class="menu-item"><a href="#" class="drp">Books </a>
+			<div class="menu-content">
+				<a  href="add_book.php">Add Book</a><br>
+				<a  href="remove_book.php">Remove Book</a><br>
+				<a href="display_books.php">Display all Books</a><br>
+			</div>
+		
+		</li>
+
+        <li class="menu-item"><a href="#" class="drp">Electronics </a>
+            <div class="menu-content">
+                <a  href="add_book.php">Laptops</a><br>
+                <a  href="remove_book.php">Tablets</a><br>
+                <a href="display_books.php">Mobile Phones</a><br>
+            </div>
+        </li>
+
+        <li class="menu-item"><a href="#" class="drp">Clothing </a>
+            <div class="menu-content">
+                <a  href="add_book.php">Tshirts</a><br>
+                <a  href="remove_book.php">Hoodies</a><br>
+                <a href="display_books.php">Formal Shirts</a><br>
+            </div>
+        </li>
+
+	</ul>
+	<p align="center"> Welcome to JBU's Online store - open for faculty, staff, and students!<p>
+
+		</center>
+
+	<table align = "center">
+		<tr>
+			<td> <a href = "javascript:void(0)" onclick = "popupfunction('1')" class=li> <img src="images/dell.jpg" alt="Dell Laptop" width = "400" height = "266"> <br> <center>Dell Laptop</center> </a> </td>
+			<td> <a href = "javascript:void(0)" onclick = "popupfunction('2')" class=li> <img src="images/mac.jpg" alt="MacBook" width = "400" height = "266"> <br> <center>MacBook</center> </a> </td>
+			<td> <a href = "javascript:void(0)" onclick = "popupfunction('3')" class=li> <img src="images/ipad.jpg" alt="iPad" width = "280" height = "350"> <br>  <center>iPad</center> </a> </td>
+		</tr>
+	</table>
+	<table align = "center">
+		<tr>
+			<td> <a href = "javascript:void(0)" onclick = "popupfunction('4')" class=li> <img src="images/sony.webp" alt="Headphones" width = "400" height = "320"> <br> <center>Headphones</center> </a> </td>
+			<td> <a href = "javascript:void(0)" onclick = "popupfunction('5')" class=li> <img src="images/acc.webp" alt="Accessories" width = "400" height = "400"> <br> <center>PC Accessories</center> </a> </td>
+		</tr>
+	</table>
+	<br> <br>
+	<div id="popup1" class="white_content">
+		<p align=center><br><br>
+		<img src="images/dell.jpg" width = "400" height = "266" /><br>Dell Laptop<br><br>Price:$600<br>Rating: 4<br>
+		<a href = "javascript:void(0)" onclick = "popupclose('1')" class=linktext>close window</a>
+		</p>
+		</div>
+		<div id="fade2" class="black_content"></div>
+	<div id="popup2" class="white_content">
+		<p align=center><br><br>
+		<img src="images/mac.jpg" width = "400" height = "266" /><br>MacBook<br><br>Price:$1000<br>Rating: 5<br>
+		<a href = "javascript:void(0)" onclick = "popupclose('2')" class=linktext>close window</a>
+		</p>
+		</div>
+		<div id="fade2" class="black_content"></div>
+		<div id="popup3" class="white_content">
+			<p align=center><br><br>
+			<img src="images/ipad.jpg" width = "280" height = "350" /><br>iPad<br><br>Price:$800<br>Rating: 5<br>
+			<a href = "javascript:void(0)" onclick = "popupclose('3')" class=linktext>close window</a>
+			</p>
+			</div>
+			<div id="fade2" class="black_content"></div>
+			<div id="popup4" class="white_content">
+				<p align=center><br><br>
+				<img src="images/sony.webp" width = "400" height = "320" /><br>Sony Headphones<br><br>Price:$400<br>Rating: 5<br>
+				<a href = "javascript:void(0)" onclick = "popupclose('4')" class=linktext>close window</a>
+				</p>
+				</div>
+				<div id="fade2" class="black_content"></div>
+			<div id="popup5" class="white_content">
+				<p align=center><br><br>
+				<img src="images/acc.webp" width = "400" height = "400" /><br>Keyboard, Mouse, and Mousepad<br><br>Price:$80<br>Rating: 3<br>
+				<a href = "javascript:void(0)" onclick = "popupclose('5')" class=linktext>close window</a>
+				</p>
+				</div>
+				<div id="fade2" class="black_content"></div>
+	</body>
+</html>
+
+
+
